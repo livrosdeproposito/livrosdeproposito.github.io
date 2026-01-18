@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #222;
+    color: #fff;
+    min-height: 100vh;
+    transition: width 0.3s;
+    padding-top: 20px;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Conteúdo */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header h2 {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+/* Seções */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+}
+
+/* Destaque */
+.destaque {
+    background: #fff;
+    padding: 20px;
+    border-left: 5px solid #333;
+}
+
+.destaque h4 {
+    margin-bottom: 10px;
+}
